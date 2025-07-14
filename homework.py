@@ -15,9 +15,10 @@ st.write(f"Your age is : {select_age}")
 
 st.checkbox("I Agree Terms and condtions")
 
-st.subheader("Choose Your Color")
-color = st.radio("pick one : ", ["Red", "Orange", "Pink"])
-st.write(f"Your choice : {color}")
+st.subheader("Select Your Branch")
+branch = ["CO", "CE", "EE", "EJ", "IT", "CSE", "ECE", "ME"]
+select_branch = st.selectbox("select branch : ", branch)
+st.write(f"Your Branch: {select_branch}")
 
 rate = st.slider("Rate my wireframe : ", 0, 10)
 st.write(f"Your rating : {rate}/10")
